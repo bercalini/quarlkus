@@ -1,0 +1,3 @@
+Error:com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 16 path $
+Json:
+Restaurante(id=1, cnpj=null, nome=teste, localizacao=null, proprietario=teste, dataCriacao=null, dataAtualizacao=null)

@@ -1,0 +1,22 @@
+quarkus:
+  datasource:
+    jdbc:
+      url: jdbc:postgresql://localhost:5432/postgres
+      driver: org.postgresql.Driver
+    username: cadastro
+    password: cadastro
+  hibernate-orm:
+    database:
+      generation: update
+    log:
+      sql: true
+      format-sql: false
+
+  #log:
+   # level: ALL
+
+mp:
+  jwt:
+    verify:
+      issuer: http://localhost:8180/auth/realms/ifood
+      publickey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAo7RRWsjQNnEJtBBacLM/ObwLxLcdSLSzpfiltdn83t8mocLQ1GhcxDtBzk5QHLeS6EbItYOwpKnN8+qvbXIJ6tzv1UZn8cUYxHPXwtyQd3psfwS2TvcyrfoFxNhZvm0+m9E8sLXlnJBPIK65/xN2aiY2A7Y1QpbGhNgqRvWJxFqpiO7P/FthgdK1Egy5Dts/kPkQ1IaZSumEr692xUpNA7Ky2Xoa9M9K4IrNrHjghGNa84CsFtZcory1nEwtX+sYSZLnH/wp8/aYsrvjfiPGMNY9pVnveWrT9donoJ1lFhMPqmMFl1+bLHzvDLYcDNepaUUDbhXOV/hAuoYvC6yXRQIDAQAB
